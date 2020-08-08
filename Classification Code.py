@@ -25,7 +25,7 @@ data['Turkey Public Debt'] = data['Turkey Public Debt ']
 data['Growth Rate Differential'] = data['Turkey GDP Growth Rate'] - data['US GDP Growth Rate']
 
 
-#Picking out only the relevant columns
+#Picking out only the relevant columns (in order these were the Current Account Balance, Inflation RD, Unemployment Diff, Interest RD, External Public Debt, GDP Growth RD) 
 X = data.iloc[:, [5, 6, 10, 13, 14, 15]].values
 y = data.iloc[:, [0]].values
 
